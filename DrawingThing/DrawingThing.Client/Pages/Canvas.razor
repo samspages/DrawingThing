@@ -1,0 +1,42 @@
+﻿@page "/"
+@rendermode InteractiveAuto
+<PageTitle>Canvas</PageTitle>
+<h1>Draw Here</h1>
+
+<canvas id="drawingCanvas" width="1200" height="800" style="border:1px solid #000;"></canvas>
+<button class="btn clear-btn" @onclick="ClearCanvas">Clear Canvas</button>
+
+<script>
+    function Init () {
+        const canvas = document.getElementById('drawingCanvas');
+        const ctx = canvas.getContext('2d');
+        let drawing = false;
+        let lastX = 0;
+        let lastY = 0;
+
+        canvas.addEventListener('mousedown', (e) => {
+            drawing = true;
+            lastX = e.offsetX;
+            lastY = e.offsetY;
+        });
+
+        canvas.addEventListener('mousemove', (e) => {
+            if (!drawing) return;
+            ctx.beginPath();
+            ctx.moveTo(lastX, lastY);
+            ctx.lineTo(e.offsetX, e.offsetY);
+            ctx.stroke();
+            lastX = e.offsetX;
+            lastY = e.offsetY;
+        });
+
+        canvas.addEventListener('mouseup', () => drawing = false);
+        canvas.addEventListener('mouseout', () => drawing = false);
+    };
+
+    function ClearCanvas() {
+        let canvas = document.getElementById('drawingCanvas');
+        let ctx = canvas.getContext('2d');
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+    }
+</script>
