@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawingThing", "DrawingThing\DrawingThing\DrawingThing.csproj", "{1179058C-A858-4047-96F9-45B1E3306E40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawingThing.Client", "DrawingThing\DrawingThing.Client\DrawingThing.Client.csproj", "{D922915F-8956-4C8D-8E04-3250C57C12BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1179058C-A858-4047-96F9-45B1E3306E40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1179058C-A858-4047-96F9-45B1E3306E40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1179058C-A858-4047-96F9-45B1E3306E40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1179058C-A858-4047-96F9-45B1E3306E40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D922915F-8956-4C8D-8E04-3250C57C12BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D922915F-8956-4C8D-8E04-3250C57C12BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D922915F-8956-4C8D-8E04-3250C57C12BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D922915F-8956-4C8D-8E04-3250C57C12BC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
